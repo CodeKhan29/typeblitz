@@ -1,0 +1,151 @@
+* { align-items: center;}
+
+.options,
+.invisible-options {
+    background-color: var(--background-color);
+    border: 0;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 16px;
+  }
+
+  .invisible-options {
+    visibility: hidden;
+    margin-top: 10px;
+    pointer-events: none;
+  }
+
+  button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 16px;
+    border-style: none;
+    border-color: var(--border-color);
+    border-radius: 15px; 
+    transition: filter 0.1s ease-in-out;
+  }
+  
+  .button-clicked {
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    padding: 16px;
+    font-size: 16px;
+    border-style: none;
+    border-color: var(--border-color);
+    border-radius: 15px; 
+  }
+  
+  button {
+    transition: filter 0.1s ease-in-out;
+  }
+  
+  button:hover {
+    filter: brightness(90%);
+  }
+  
+  button:active {
+    filter: brightness(70%);
+  }
+
+
+  #typing-test {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .hidden-input{
+    opacity:0;
+    filter:alpha(opacity=0);
+  }
+
+  .correct {
+    color: var(--correct-color);
+  }
+
+  .incorrect {
+    color: var(--incorrect-color);
+  }
+
+  .caret {
+    border-right: 1px solid;
+    border-color: var(--accent-color);
+  }
+
+  .wpm-counter,
+  .invisible-wpm-counter {
+    margin-top: 1vh;
+    margin-right: auto;
+  }
+
+  .invisible-wpm-counter {
+    visibility: hidden;
+  }
+
+  .left-caret {
+    border-left: 1px solid;
+    border-color: var(--accent-color);
+  }
+
+  #typing-area{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    height: 136px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    font-size: 24px;
+    scrollbar-width: none;
+    color: var(--underlaying-text-color);
+  }
+
+  #typing-area::-webkit-scrollbar {
+    width: 0; /* Set width to 0 to hide the scrollbar */
+  }
+
+  #reset-button{
+    padding: 7px;
+    padding-top: 0px;
+    margin-right: auto;
+    background: none;
+  }
+
+  #reset-button{
+    background: none;
+    border: none;
+    margin-right: auto;
+    margin-top: -20px;
+    font-size: 50px;
+    text-decoration: none;
+  }
+
+  span.word {
+    height: 45px;
+    margin-right: 10px;
+  }
+  .wpm-counter {
+    display: block;
+    margin-bottom: 10px; /* Increase spacing between counters */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .wpm-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  
