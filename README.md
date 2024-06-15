@@ -2,7 +2,9 @@
 
 Inspired by [MonkeyType](https://monkeytype.com), TypeBlitz is a minimalistic online typing application designed to help users improve their typing speed and accuracy with a social and competitive twist. 
 
-PinguType is implemented as a MERN stack, using [MongoDB](https://www.mongodb.com/), [Express](https://expressjs.com/), [React.js](https://react.dev/), and [Node.js](https://nodejs.org/en).
+PinguType is implemented as a MERN stack, using [MongoDB](https://www.mongodb.com/), [Express](https://expressjs.com/), [React.js](https://react.dev/), and [Node.js](https://nodejs.org/en
+
+Live Link: https://typeblitz.onrender.com/
 
 # Installation and Setup
 
